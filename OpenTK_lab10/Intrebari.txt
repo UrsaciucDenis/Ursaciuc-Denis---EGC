@@ -1,0 +1,34 @@
+Intrebari
+Ursaciuc Denis-Andrei
+
+
+1. Utilizați pentru texturare imagini cu transparență și fără. Ce observați?
+	Dacă folosim pentru texturare imagini cu transparență, atunci unele părți ale obiectului 3D vor fi transparente. Acest lucru se datorează faptului că valorile de transparență din imaginea de textură sunt folosite pentru a controla cât de transparentă este o anumită parte a obiectului. 
+	Dacă folosim pentru texturare imagini fără transparență, atunci toate părțile obiectului 3D vor fi opac. Acest lucru înseamnă că nu va exista niciun efect de transparență.
+
+
+2.Ce formate de imagine pot fi aplicate în procesul de texturare în
+OpenGL?
+	
+	OpenGL acceptă o gamă largă de formate de imagine pentru texturare. Acestea pot fi împărțite în două categorii principale:
+
+		-Formate simple: Aceste formate sunt cele mai simple și eficiente, dar oferă o gamă mai limitată de culori. 
+		-Formate complexe: Aceste formate oferă o gamă mai largă de culori și caracteristici, dar necesită mai multă memorie și putere de procesare.
+
+
+3.Specificați ce se întâmplă atunci când se modifică culoarea (prin manipularea canalelor RGB) obiectului texturat.
+
+	Atunci când se modifică culoarea obiectului texturat prin manipularea canalelor RGB, se modifică valorile de culoare ale pixelilor care alcătuiesc textura. Aceste modificări se reflectă în modul în care textura este aplicată la obiectul 3D.
+	Canalul R (Red) controlează cantitatea de roșu din culoarea unui pixel. Canalul G (Green) controlează cantitatea de verde din culoarea unui pixel. Canalul B (Blue) controlează cantitatea de albastru din culoarea unui pixel.
+
+4. Ce deosebiri există între scena ce utilizează obiecte texturate în modul iluminare activat, respectiv dezactivat?
+
+		Diferențele dintre scena ce utilizează obiecte texturate în modul iluminare activat, respectiv dezactivat, sunt următoarele:
+
+			În modul iluminare activat, obiectele texturate vor reflecta lumina din scenă. Acest lucru va crea un aspect mai realist, deoarece obiectele din lumea reală reflectă lumina.
+			În modul iluminare dezactivat, obiectele texturate vor fi afișate cu culoarea lor de bază. Acest lucru va crea un aspect mai plat și mai nerealist.
+		
+		Iată câteva exemple specifice de cum se pot observa aceste diferențe:
+
+			În modul iluminare activat, un obiect texturat cu o imagine a unei cărămizi va arăta ca o cărămidă reală, cu reflexii și umbre. În modul iluminare dezactivat, obiectul va arăta ca un cub simplu de culoare roșie.
+			În modul iluminare activat, un obiect texturat cu o imagine a unei fete va arăta ca o persoană reală, cu umbre pe față și pe corp. În modul iluminare dezactivat, obiectul va arăta ca o figurină simplă de culoare galbenă.
